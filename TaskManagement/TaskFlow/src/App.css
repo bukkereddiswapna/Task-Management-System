@@ -1,0 +1,207 @@
+/* ==========================================================================
+   GLOBAL CANVAS STYLES
+   ========================================================================== */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #FAF8FF;
+    font-family: 'Poppins', 'Inter', sans-serif;
+}
+
+/* ==========================================================================
+   STRUCTURED CONTAINER RESETS & TEXT LAYER FIXES
+   ========================================================================== */
+.hero-section, 
+main, 
+section,
+.features-section,
+.how-section {
+    background: #FAF8FF !important;
+    padding: 90px 0;
+}
+
+/* Universal text reset to fix invisible white text bugs on the light page */
+.hero-section h1, .hero-section h2, .hero-section h3, .hero-section h4,
+main h1, main h2, main h3, h1, h2, h3, h4, h5, .section-title {
+    color: #1C1B24 !important;
+}
+
+.hero-section p, main p, p, .hero-section li, main li, li,
+.hero-section span:not(.badge), main span:not(.badge),
+.feature-card p, .step-card p {
+    color: #7A768F !important;
+}
+
+.section-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   CUSTOM COMPACT NAVIGATION BAR
+   ========================================================================== */
+.custom-navbar {
+    background: #FFFFFF !important;
+    padding: 16px 0;
+    border-bottom: 1px solid #EAE6F6 !important;
+    box-shadow: 0 4px 20px rgba(104, 74, 226, 0.02);
+}
+
+.logo-text {
+    color: #1C1B24 !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+    padding: 8px 16px;
+    text-decoration: none !important;
+}
+
+.nav-link:hover {
+    color:#FFFFFF!important;
+    text-decoration: underline !important;
+    text-decoration-color: #FFFFFF !important;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 5px;
+}
+
+
+/* ==========================================================================
+   FEATURES & HOW IT WORKS CARD MODULES
+   ========================================================================== */
+.feature-card,
+.step-card {
+    background: #FFFFFF;
+    border: 1px solid #EAE6F6;
+    border-radius: 20px;
+    padding: 40px 28px;
+    text-align: center;
+    box-shadow: 0 10px 35px rgba(28, 27, 36, 0.03);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover,
+.step-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(104, 74, 226, 0.12);
+    border-color: #E2DCF9;
+}
+
+.feature-icon {
+    font-size: 2.8rem;
+    color: #684AE2 !important;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+/* ==========================================================================
+   HERO TASK BOARD PREVIEW BOX MOCKUP
+   ========================================================================== */
+.task-board-preview {
+    background: #FFFFFF !important;
+    border: 1px solid #EAE6F6 !important;
+    border-radius: 24px !important;
+    box-shadow: 0 15px 40px rgba(28, 27, 36, 0.05) !important;
+    padding: 32px !important;
+}
+
+.task-board-preview > div {
+    background: #FAF8FF !important;
+    border: 1px solid #EAE6F6 !important;
+    border-radius: 14px !important;
+    padding: 16px 20px !important;
+    margin-bottom: 12px !important;
+}
+
+/* ==========================================================================
+   INTERACTIVE THEMED ACTIONS AND BUTTONS
+   ========================================================================== */
+.btn-primary, .register-btn {
+    background: linear-gradient(135deg, #8F76F3 0%, #684AE2 100%);
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 12px 28px !important;
+    font-weight: 600 !important;
+    font-size: 0.92rem !important;
+    box-shadow: 0 6px 20px rgba(104, 74, 226, 0.25) !important;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    text-decoration: none !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-primary:hover, .register-btn:hover {
+    filter: brightness(0.95);
+    transform: translateY(-2px);
+}
+
+.btn-outline, .btn-outline-light {
+    border: 2px solid #684AE2 !important;
+    /* color: #684AE2 !important; */
+    border-radius: 12px !important;
+    padding: 12px 28px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-outline, .btn-outline-light{
+    background: linear-gradient(135deg, #8F76F3 0%, #684AE2 100%) !important;
+    color: #FFFFFF !important;
+    border-color: transparent !important;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hero-section .badge {
+    background: rgba(104, 74, 226, 0.08) !important;
+    color: #684AE2 !important;
+    border: 1px solid rgba(104, 74, 226, 0.15) !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+}
+/* ==========================================================================
+   FORCE LANDING PAGE FOOTER ALL WHITE TEXT OVERRIDE
+   ========================================================================== */
+footer, 
+footer h3, 
+footer p, 
+footer span,
+footer svg {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    opacity: 1 !important;
+}
