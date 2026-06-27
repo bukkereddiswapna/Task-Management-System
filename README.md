@@ -127,7 +127,7 @@ TaskManagement/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/bukkereddiswapna/Task-Management-System/
 cd TaskManagement
 ```
 
@@ -141,9 +141,9 @@ npm install
 Create a `.env` file in the `backend` folder with the following variables:
 
 ```
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
 PORT=5000
+MONGO_URI=mongodb://239x1a3329_db_user:KZAAA4ZZAxkmztOP@ac-7ew9vvr-shard-00-00.qmx2wto.mongodb.net:27017,ac-7ew9vvr-shard-00-01.qmx2wto.mongodb.net:27017,ac-7ew9vvr-shard-00-02.qmx2wto.mongodb.net:27017/courseDB?ssl=true&replicaSet=atlas-2xfa5s-shard-0&authSource=admin&appName=Cluster0
+JWT_SECRET=mysecret
 ```
 
 Start the backend server:
