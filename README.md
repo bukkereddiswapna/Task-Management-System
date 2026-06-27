@@ -100,8 +100,14 @@ TaskManagement/
 
 > Add your screenshots to a `screenshots/` folder in the project root, then they'll display below.
 
+**Landing Page**
+![Login](./screenshots/landingpage.png)
+
 **Login**
 ![Login](./screenshots/login.png)
+
+**Register**
+![Login](./screenshots/register.png)
 
 **Dashboard**
 ![Dashboard](./screenshots/dashboard.png)
